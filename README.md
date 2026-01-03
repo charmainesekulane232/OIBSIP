@@ -1,24 +1,7 @@
 # OIBSIP
-Perfect — this is exactly the right move 👍
-I’ll give you a clean, professional, internship-ready README that you can copy-paste directly into GitHub.
-
-This README:
-
-Sounds professional but entry-level
-
-Clearly explains the internship
-
-Covers Python + HTML/CSS/JavaScript
-
-Mentions Generative AI in a safe, ethical way
-
-Is suitable for recruiters, mentors, and assessors
 
 
 
----
-
-📘 README.md — Internship Repository
 
 
 
