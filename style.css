@@ -1,0 +1,119 @@
+.header-image{
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gender-selection {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.gender-option {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+    color: #888;
+}
+
+.gender-option.active {
+    border-color: #5d83e1;
+    background-color: #f0f4ff;
+    color: #5d83e1;
+}
+
+#female.active {
+    border-color: #e91e63;
+    background-color: #fce4ec;
+    color: #e91e63;
+}
+
+
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
+}
+
+.container{
+
+    margin-top: 50px;
+    width: 300px;
+    box-shadow: 0px 0px 20px 10px #830452;
+    padding: 30px;
+    border-radius: 10px;
+    background: white;
+    text-align: center;
+
+}
+h1{
+    color: #830452;
+    margin-bottom: 20px;
+}
+
+.input-group{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 80%;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    color: #830452;
+    font-weight: bold;
+}
+
+input:focus{
+    outline: none;
+    border-color: #830452;
+    box-shadow: 0 0 5px #830452;
+}
+
+
+button{
+    background-color: #830452;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover{
+    background-color: #a0346e;
+    transform: translateY(-2px);
+}
+.result-box{
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    font-weight: bold;
+    color: #333;
+}
+
+#bmi-value{
+    font-size: 24px;
+    color: #830452;
+}
+#bmi-status{
+    font-size: 20px;
+    margin-top: 10px;
+}
