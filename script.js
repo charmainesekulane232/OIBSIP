@@ -44,56 +44,9 @@ function calculateBMI() {
         valueDisplay.style.color = "#e67e22"; // Orange
     } else {
         statusDisplay.innerText = "Obese";
-        valueDisplay.style.color = "#e74c3c"; // Red
+    valueDisplay.style.color = "#e74c3c"; // Red
     }
 }
 
-async function getAIHealthAdvice(height,weight,gender,bmi) {
-    try {
-        // Example: fetch advice from an API (replace URL and payload as needed)
-        const response = await fetch('https://localhost:5000/calculate-bmi', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ height, weight, gender, bmi })
-        });
 
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-
-        const data = await response.json();
-        // Return the advice text or the full object depending on API
-        document.getElementById('advice-text').innerText = data.advice;
-    } catch (error) {
-        console.error('Error connecting to the AI server:', error);
-        return 'Unable to fetch AI health advice at this time.';
-    }
-}
-
-async function getAIAdvice(height, weight, gender) {
-    try {
-        const response = await fetch('http://localhost:5000/calculate-bmi', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ height, weight, gender })
-        });
-        const data = await response.json();
-        return data;
-    } catch (error) {
-        console.error('Error fetching AI advice:', error);
-        return null;
-    }
-}
-
-document.querySelector('button').addEventListener('click', async () => {
-    // Trigger BMI calculation
-    calculateBMI();
-
-    // Optionally fetch AI advice and display it
-    const height = parseFloat(document.getElementById('height').value);
-    const weight = parseFloat(document.getElementById('weight').value);
-    const advice = await getAIAdvice(height, weight, selectedGender);
-    if (advice && advice.advice) {
-        document.getElementById('advice-text').innerText = advice.advice;
-    }
-});
+        
