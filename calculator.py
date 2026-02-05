@@ -17,8 +17,8 @@ top_symbols = ["AC", "+/-", "%"]
 low_count = len(button_values)  # 5
 column_count = len(button_values[0])  # 4
 
-color_light_pink = "#FFC5C5"
-color_light_yellow = "#FFF5BA"
+color_light_pink = "#C21F5D"
+color_light_yellow = "#075081"
 color_light_blue = "#C5DFFF"
 color_black = "#000000"
 color_white = "#FFFFFF"
